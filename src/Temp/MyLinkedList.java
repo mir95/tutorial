@@ -168,7 +168,6 @@ public class MyLinkedList<T> extends AbstractList<T> {
         last.setNext((LinkedListNode) objects[0]);
         return temp;
     }
-    ////
 
     void addFirst(T o) {
         if (index == -1) {

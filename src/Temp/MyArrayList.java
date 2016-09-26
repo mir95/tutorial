@@ -44,22 +44,26 @@ public class MyArrayList<T> extends AbstractList<T>  {
     @Override
     public boolean add(T t) {
             index++;
-            objects[index] = t;
+            ArrayListNode<T> node = new ArrayListNode<>(t);
+            objects[index] = node;
         return true;
     }
 
     @Override
     public boolean remove(Object o) {
+
         return false;
     }
 
     @Override
     public T remove(int index1) {
+
+        T temp = (T)objects[index1];
         for (int i = index1; i < index; i++) {
             objects[i] = objects[i + 1];
         }
-        T temp = (T)objects[index];
         index--;
+        objects[index+1]=null;
         return temp;
     }
 

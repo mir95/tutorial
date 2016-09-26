@@ -12,18 +12,21 @@ public class tempMain {
 
         List<Integer> linkedList =  ListFacttory.createMyArrayList();
         linkedList.add(2);
+        System.out.println(linkedList.get(0));
         linkedList.add(3);
+        System.out.println(linkedList.get(1));
         linkedList.add(4);
+        System.out.println(linkedList.get(2));
         linkedList.add(5);
+        System.out.println(linkedList.get(3));
         linkedList.remove(2);
+        System.out.println(linkedList.get(3));
         doSomething(linkedList);
 
         HashMap<String, String> map = new HashMap<>();
         map.put("Столица", "Grozny");
         map.put("место в которое я хочу", "London");
         map.get("Столица");
-
-
     }
 
     private static void doSomething(List<Integer> list){
