@@ -10,13 +10,10 @@ public class tempMain {
 
     public static void main(String[] args) {
 
-        List<Integer> linkedList =  ListFacttory.createMyArrayList();
-        linkedList.add(2);
-        linkedList.add(3);
-        linkedList.add(4);
-        linkedList.add(5);
-        linkedList.remove(2);
-        doSomething(linkedList);
+        List<Integer> ArrayList =  ListFacttory.createMyArrayList();
+        ArrayList.isEmpty();
+        System.out.println(ArrayList.isEmpty());
+        doSomething(ArrayList);
 
         HashMap<String, String> map = new HashMap<>();
         map.put("Столица", "Grozny");

@@ -25,7 +25,7 @@ public class MyLinkedList<T> extends AbstractList<T> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return size() == 0;
     }
 
     @Override
@@ -168,7 +168,6 @@ public class MyLinkedList<T> extends AbstractList<T> {
         last.setNext((LinkedListNode) objects[0]);
         return temp;
     }
-    ////
 
     void addFirst(T o) {
         if (index == -1) {
@@ -185,15 +184,6 @@ public class MyLinkedList<T> extends AbstractList<T> {
         last = temp;
         index++;
         objects[index] = last;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 0; i <= index; i++) {
-            stringBuilder.append(((LinkedListNode) objects[i]).getElement()).append(",");
-        }
-        return stringBuilder.toString();
     }
 
     //Nested class - прочитать
@@ -224,7 +214,11 @@ public class MyLinkedList<T> extends AbstractList<T> {
 
         @Override
         public String toString() {
-            return element + "";
+            StringBuilder stringBuilder = new StringBuilder();
+            for (int i = 0; i <= index; i++) {
+                stringBuilder.append(((LinkedListNode) objects[i]).getElement()).append(",");
+            }
+            return stringBuilder.toString();
         }
     }
 }

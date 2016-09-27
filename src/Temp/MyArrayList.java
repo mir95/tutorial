@@ -1,9 +1,6 @@
 package Temp;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 /**
  * Created by Sermilion on 23/09/2016.
@@ -12,17 +9,29 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     private int index = -1;
 
+    private int size;
+
     MyArrayList(){
         objects = new ArrayListNode[10];
     }
 
     @Override
     public boolean isEmpty() {
+        for (int i = 0; i < this.size; i++) {
+            if (objects[i] != null) {
+                return true;
+            } else {
+                return false;
+            }
+        }
         return false;
     }
 
     @Override
     public boolean contains(Object o) {
+        for (int i = 0; i < this.size; i++) {
+
+        }
         return false;
     }
 
@@ -43,8 +52,9 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public boolean add(T t) {
-            index++;
-            objects[index] = t;
+        index++;
+        ArrayListNode<T> node = new ArrayListNode<>(t);
+        objects[index] = node;
         return true;
     }
 
@@ -55,11 +65,12 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public T remove(int index1) {
+        T temp = (T)objects[index1];
         for (int i = index1; i < index; i++) {
             objects[i] = objects[i + 1];
         }
-        T temp = (T)objects[index];
         index--;
+        objects[index+1]=null;
         return temp;
     }
 
@@ -140,7 +151,6 @@ public class MyArrayList<T> extends AbstractList<T>  {
         void setElement(T element) {
             this.element = element;
         }
-                        
 
         @Override
         public String toString() {
