@@ -17,8 +17,8 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public boolean isEmpty() {
-        for (int i = 0; i < this.size; i++) {
-            if (objects[i] != null) {
+        for (int i = 0; i < objects.length; i++) {
+            if (objects[i] == null) {
                 return true;
             } else {
                 return false;
