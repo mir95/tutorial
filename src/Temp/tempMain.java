@@ -12,9 +12,19 @@ public class tempMain {
 
         List<Integer> ArrayList = ListFacttory.createMyArrayList();
         ArrayList.add(1);
+        ArrayList.add(1);
+        ArrayList.add(1);
         ArrayList.isEmpty();
+        System.out.println(ArrayList.size());
         System.out.println(ArrayList.contains(2));
         doSomething(ArrayList);
+
+        Set set = new HashSet();
+        set.add(1);
+        set.add(1);
+        set.add(2);
+        ArrayList a = new ArrayList(set);
+        a.add(2);
 
         HashMap<String, String> map = new HashMap<>();
         map.put("Столица", "Grozny");

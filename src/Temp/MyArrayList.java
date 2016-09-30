@@ -17,12 +17,17 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public boolean isEmpty() {
-        for (int i = 0; i < objects.length; i++) {
-            if (objects[i] != null) {
-                return false;
-            }
-        }
-        return true;
+//        for (int i = 0; i < objects.length; i++) {
+//            if (objects[i] != null) {
+//                return false;
+//            }
+//        }
+//        return true;
+        return size==0;
+    }
+
+    public int size() {
+        return size;
     }
 
     @Override
@@ -54,6 +59,7 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public boolean add(T t) {
+        size++;
         index++;
         ArrayListNode<T> node = new ArrayListNode<>(t);
         objects[index] = node;
@@ -113,6 +119,7 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public void add(int index, T element) {
+        size++;
     }
 
     @Override
