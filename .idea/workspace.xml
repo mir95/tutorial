@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d937299-8ed3-4932-9926-b0c830349b10" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Temp/Collection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/MyArrayList.class" afterPath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/MyArrayList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/tempMain.class" afterPath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/tempMain.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/MyArrayList.java" afterPath="$PROJECT_DIR$/src/Temp/MyArrayList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/tempMain.java" afterPath="$PROJECT_DIR$/src/Temp/tempMain.java" />
     </list>
     <ignored path="InsuranceCompany.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/src/Temp/MyArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="754">
-              <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -72,8 +67,8 @@
       <file leaf-file-name="Collection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Temp/Collection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="364">
+              <caret line="14" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -629,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475009518840</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1">
+      <created>1475241321141</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1475241321141</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -684,7 +686,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fdjdfgjdfjgdfdgdf" />
-    <option name="LAST_COMMIT_MESSAGE" value="fdjdfgjdfjgdfdgdf" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1059,7 +1062,7 @@
     <entry file="file://$PROJECT_DIR$/src/Temp/MyArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="754">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1082,8 +1085,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Temp/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state relative-caret-position="364">
+          <caret line="14" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
