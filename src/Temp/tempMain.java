@@ -10,9 +10,10 @@ public class tempMain {
 
     public static void main(String[] args) {
 
-        List<Integer> ArrayList =  ListFacttory.createMyArrayList();
+        List<Integer> ArrayList = ListFacttory.createMyArrayList();
+        ArrayList.add(1);
         ArrayList.isEmpty();
-        System.out.println(ArrayList.isEmpty());
+        System.out.println(ArrayList.contains(2));
         doSomething(ArrayList);
 
         HashMap<String, String> map = new HashMap<>();
@@ -23,7 +24,7 @@ public class tempMain {
 
     }
 
-    private static void doSomething(List<Integer> list){
+    private static void doSomething(List<Integer> list) {
         ///
     }
 }
