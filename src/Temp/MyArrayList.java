@@ -17,22 +17,24 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public boolean isEmpty() {
-        for (int i = 0; i < this.size; i++) {
+        for (int i = 0; i < objects.length; i++) {
             if (objects[i] != null) {
-                return true;
-            } else {
                 return false;
             }
         }
-        return false;
+        return true;
     }
 
     @Override
     public boolean contains(Object o) {
-        for (int i = 0; i < this.size; i++) {
-
+        for (int i = 0; i < objects.length; i++) {
+            if(objects[i]!=null) {
+                if (objects[i].element == o) {
+                    return false;
+                }
+            }
         }
-        return false;
+        return true;
     }
 
     @Override
@@ -42,7 +44,7 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public Object[] toArray() {
-        return new Object[0];
+                    return objects;
     }
 
     @Override
@@ -60,6 +62,7 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public boolean remove(Object o) {
+
         return false;
     }
 
