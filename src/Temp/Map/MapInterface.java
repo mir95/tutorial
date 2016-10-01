@@ -7,7 +7,8 @@ import java.util.Set;
 /**
  * Created by Sermilion on 30/09/2016.
  */
-interface MyMapInterface<K,V> {
+
+interface MapInterface<K,V> {
 
     int size();
 

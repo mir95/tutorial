@@ -7,8 +7,7 @@ import java.util.Set;
 /**
  * Created by Sermilion on 30/09/2016.
  */
-public class HashMap extends MyAbstractMap {
-
+public class HashMap extends AbstractMap {
 
     @Override
     public boolean containsKey(Object key) {
@@ -29,7 +28,6 @@ public class HashMap extends MyAbstractMap {
     public Object put(Object key, Object value) {
         return null;
     }
-
 
     @Override
     public Object remove(Object key) {

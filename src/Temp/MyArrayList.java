@@ -49,21 +49,12 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public Object[] toArray() {
-        return new Object[0];
+        return objects;
     }
 
     @Override
     public <T1> T1[] toArray(T1[] a) {
         return null;
-    }
-
-    @Override
-    public boolean add(T t) {
-        size++;
-        index++;
-        ArrayListNode<T> node = new ArrayListNode<>(t);
-        objects[index] = node;
-        return true;
     }
 
     @Override
@@ -118,8 +109,37 @@ public class MyArrayList<T> extends AbstractList<T>  {
     }
 
     @Override
-    public void add(int index, T element) {
+    public boolean add(T t) {
         size++;
+        index++;
+        ArrayListNode<T> node = new ArrayListNode<>(t);
+        objects[index] = node;
+        return true;
+    }
+
+    @Override
+    public void add(int index, T el) {
+        size++;
+        T temp = null;
+        T temp1 = null;
+        temp = objects[index].element;
+        objects[index].element = el;
+
+//        temp1 = objects[index+1].element;
+//        objects[index+1].element = temp;
+//        temp = objects[index+2].element;
+//        objects[index+2].element = temp1;
+//        temp1 = objects[index+3].element;
+//        objects[index+3].element = temp;
+//        temp = objects[index+4].element;
+//        objects[index+4].element = temp1;
+
+        for (int i = index; i < objects.length; i++) {
+            temp1 = objects[i+1].element;
+            objects[i+1].element = temp;
+            temp = objects[i+2].element;
+            objects[i+2].element = temp1;
+        }
     }
 
     @Override

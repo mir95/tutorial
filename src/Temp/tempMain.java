@@ -12,9 +12,12 @@ public class tempMain {
 
         List<Integer> ArrayList = ListFacttory.createMyArrayList();
         ArrayList.add(1);
-        ArrayList.add(1);
-        ArrayList.add(1);
+        ArrayList.add(2);
+        ArrayList.add(3);
+        ArrayList.add(4);
+        ArrayList.add(5);
         ArrayList.isEmpty();
+        ArrayList.add(0,3);
         System.out.println(ArrayList.size());
         System.out.println(ArrayList.contains(2));
         doSomething(ArrayList);
