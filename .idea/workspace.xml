@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d937299-8ed3-4932-9926-b0c830349b10" name="Default" comment="1">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Temp/Map/MyAbstractMap.java" afterPath="$PROJECT_DIR$/src/Temp/Map/AbstractMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Temp/Map/MyMapInterface.java" afterPath="$PROJECT_DIR$/src/Temp/Map/MapInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/MyArrayList.class" afterPath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/MyArrayList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/tempMain.class" afterPath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/tempMain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_javatuples_javatuples_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_javatuples_javatuples_1_2.xml" />
+    <list default="true" id="0d937299-8ed3-4932-9926-b0c830349b10" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/Map/HashMap.java" afterPath="$PROJECT_DIR$/src/Temp/Map/HashMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/MyArrayList.java" afterPath="$PROJECT_DIR$/src/Temp/MyArrayList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/tempMain.java" afterPath="$PROJECT_DIR$/src/Temp/tempMain.java" />
     </list>
     <ignored path="InsuranceCompany.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,8 +49,8 @@
       <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Temp/MyArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="187" column="5" selection-start-line="169" selection-start-column="4" selection-end-line="187" selection-end-column="5" />
+            <state relative-caret-position="340">
+              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
                 <element signature="e#3533#3534#0" expanded="true" />
                 <element signature="e#3566#3567#0" expanded="true" />
@@ -702,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475241321141</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="добавил add&#10;">
+      <created>1475347180497</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1475347180497</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -716,14 +715,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855093" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3400287" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32755905" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711622" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23672883" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -758,7 +757,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fdjdfgjdfjgdfdgdf" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="добавил add&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил add&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1488,8 +1488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Temp/MyArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="187" column="5" selection-start-line="169" selection-start-column="4" selection-end-line="187" selection-end-column="5" />
+        <state relative-caret-position="340">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
             <element signature="e#3533#3534#0" expanded="true" />
             <element signature="e#3566#3567#0" expanded="true" />
