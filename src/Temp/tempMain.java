@@ -9,17 +9,19 @@ public class tempMain {
 
     public static void main(String[] args) {
 
-        List<Integer> ArrayList = ListFacttory.createMyArrayList();
+        List<Integer> ArrayList = ListFacttory.createMyDoubleLinkedList();
         ArrayList.add(1);
         ArrayList.add(2);
         ArrayList.add(3);
         ArrayList.add(4);
         ArrayList.add(5);
+        System.out.println(ArrayList.size());
         ArrayList.add(0,3);
         ArrayList.remove(2);
         System.out.println(ArrayList.size());
         System.out.println(ArrayList.contains(2));
         doSomething(ArrayList);
+
 
         Set set = new HashSet();
         set.add(1);

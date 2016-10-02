@@ -16,6 +16,10 @@ class ListFacttory {
         return new MyLinkedList();
     }
 
+    public static MyDoubleLinkedList createMyDoubleLinkedList(){
+        return new MyDoubleLinkedList();
+    }
+
     static List getMyDoubleLinkedList(){
 //        return new DoubleLinkedList();
         return null;
