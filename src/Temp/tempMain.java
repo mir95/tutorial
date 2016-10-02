@@ -1,6 +1,5 @@
 package Temp;
 
-
 import java.util.*;
 
 /**
@@ -16,8 +15,8 @@ public class tempMain {
         ArrayList.add(3);
         ArrayList.add(4);
         ArrayList.add(5);
-        ArrayList.isEmpty();
         ArrayList.add(0,3);
+        ArrayList.remove(2);
         System.out.println(ArrayList.size());
         System.out.println(ArrayList.contains(2));
         doSomething(ArrayList);

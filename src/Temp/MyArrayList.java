@@ -59,7 +59,13 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public boolean remove(Object o) {
-        return false;
+        for (int i = (int) o; i < objects.length; i++) {
+            if(objects[i]==null) {
+                objects[i] = objects[i + 1];
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
@@ -69,8 +75,20 @@ public class MyArrayList<T> extends AbstractList<T>  {
             objects[i] = objects[i + 1];
         }
         index--;
+        size--;
         objects[index+1]=null;
         return temp;
+}
+
+    @Override
+    public boolean removeAll(Collection<?> c) {
+        for (int i = 0; i < objects.length; i++) {
+            if(objects[i]!=null) {
+                objects[i] = null;
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
@@ -85,11 +103,6 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public boolean addAll(int index, Collection<? extends T> c) {
-        return false;
-    }
-
-    @Override
-    public boolean removeAll(Collection<?> c) {
         return false;
     }
 
@@ -118,28 +131,30 @@ public class MyArrayList<T> extends AbstractList<T>  {
     }
 
     @Override
-    public void add(int index, T el) {
+    public void add(int index, T element) {
         size++;
-        T temp = null;
-        T temp1 = null;
+        ArrayListNode<T> el = new ArrayListNode<>(element);
+        objects[index] = el;
+        T temp;
+        T temp1;
         temp = objects[index].element;
-        objects[index].element = el;
+        objects[index].element = (T) el;
 
-//        temp1 = objects[index+1].element;
-//        objects[index+1].element = temp;
-//        temp = objects[index+2].element;
-//        objects[index+2].element = temp1;
-//        temp1 = objects[index+3].element;
-//        objects[index+3].element = temp;
-//        temp = objects[index+4].element;
-//        objects[index+4].element = temp1;
+        temp1 = objects[index+1].element;
+        objects[index+1].element = temp;
+        temp = objects[index+2].element;
+        objects[index+2].element = temp1;
+        temp1 = objects[index+3].element;
+        objects[index+3].element = temp;
+        temp = objects[index+4].element;
+        objects[index+4].element = temp1;
 
-        for (int i = index; i < objects.length; i++) {
-            temp1 = objects[i+1].element;
-            objects[i+1].element = temp;
-            temp = objects[i+2].element;
-            objects[i+2].element = temp1;
-        }
+//        for (int i = index; i < objects.length; i++) {
+//            temp1 = objects[i+1].element;
+//            objects[i+1].element = temp;
+//                temp = objects[i+2].element;
+//            objects[i+2].element = temp1;
+//        }
     }
 
     @Override
