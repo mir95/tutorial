@@ -23,7 +23,7 @@ public class MyArrayList<T> extends AbstractList<T>  {
 //            }
 //        }
 //        return true;
-        return size==0;
+        return size()==0;
     }
 
     public int size() {
@@ -78,13 +78,14 @@ public class MyArrayList<T> extends AbstractList<T>  {
         size--;
         objects[index+1]=null;
         return temp;
-}
+    }
 
     @Override
     public boolean removeAll(Collection<?> c) {
         for (int i = 0; i < objects.length; i++) {
-            if(objects[i]!=null) {
-                objects[i] = null;
+            c = (Collection<?>) objects[i];
+            if(c!=null) {
+                c = null;
                 return false;
             }
         }
