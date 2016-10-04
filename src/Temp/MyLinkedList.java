@@ -11,6 +11,9 @@ import java.util.ListIterator;
 
 public class MyLinkedList<T> extends AbstractList<T> {
     //Индекс последнего элемента
+
+    private int size;
+
     private int index = -1;
 
     private LinkedListNode<T> last = null;
@@ -67,17 +70,25 @@ public class MyLinkedList<T> extends AbstractList<T> {
         objects[index] = new LinkedListNode<>(o);
         last = (LinkedListNode)objects[index];
         last.setNext((LinkedListNode)objects[0]);
+        size++;
         return true;
     }
 
-    @Override
-    public boolean remove(Object o) {
-        return false;
+    void addFirst(T o) {
+        if (index == -1) {
+            objects[0] = new LinkedListNode<>(o);
+            index++;
+        } else {
+            ((LinkedListNode) objects[0]).setElement(o);
+        }
     }
 
-    @Override
-    public boolean containsAll(Collection<?> c) {
-        return false;
+    void addLast(T o) {
+        LinkedListNode<T> temp = new LinkedListNode<>(o);
+        temp.setNext((LinkedListNode) objects[0]);
+        last = temp;
+        index++;
+        objects[index] = last;
     }
 
     @Override
@@ -91,7 +102,12 @@ public class MyLinkedList<T> extends AbstractList<T> {
     }
 
     @Override
-    public boolean removeAll(Collection<?> c) {
+    public void add(int index, T element) {
+
+    }
+
+    @Override
+    public boolean containsAll(Collection<?> c) {
         return false;
     }
 
@@ -110,11 +126,33 @@ public class MyLinkedList<T> extends AbstractList<T> {
     }
 
     @Override
+    public boolean remove(Object o) {
+        return false;
+    }
+
+    @Override
+    public boolean removeAll(Collection<?> c) {
+        return false;
+    }
+
+    @Override
     public T remove(int index1) {
         for (int i = index1; i < index; i++) {
             objects[i] = objects[i + 1];
         }
         return removeLast();
+    }
+
+    void removeFirst() {
+        remove(0);
+    }
+
+    public T removeLast() {
+        T temp = (T)objects[index];
+        index--;
+        last = (LinkedListNode) objects[index];
+        last.setNext((LinkedListNode) objects[0]);
+        return temp;
     }
 
     @Override
@@ -142,10 +180,6 @@ public class MyLinkedList<T> extends AbstractList<T> {
         return null;
     }
 
-    void removeFirst() {
-        remove(0);
-    }
-
     @Override
     public T get(int index) {
         return (T) ((LinkedListNode)objects[index]).getElement();
@@ -154,36 +188,6 @@ public class MyLinkedList<T> extends AbstractList<T> {
     @Override
     public T set(int index, T element) {
         return null;
-    }
-
-    @Override
-    public void add(int index, T element) {
-
-    }
-
-    public T removeLast() {
-        T temp = (T)objects[index];
-        index--;
-        last = (LinkedListNode) objects[index];
-        last.setNext((LinkedListNode) objects[0]);
-        return temp;
-    }
-
-    void addFirst(T o) {
-        if (index == -1) {
-            objects[0] = new LinkedListNode<>(o);
-            index++;
-        } else {
-            ((LinkedListNode) objects[0]).setElement(o);
-        }
-    }
-
-    void addLast(T o) {
-        LinkedListNode<T> temp = new LinkedListNode<>(o);
-        temp.setNext((LinkedListNode) objects[0]);
-        last = temp;
-        index++;
-        objects[index] = last;
     }
 
     //Nested class - прочитать

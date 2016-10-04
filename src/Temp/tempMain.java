@@ -22,7 +22,6 @@ public class tempMain {
         System.out.println(ArrayList.contains(2));
         doSomething(ArrayList);
 
-
         Set set = new HashSet();
         set.add(1);
         set.add(1);
