@@ -134,28 +134,18 @@ public class MyArrayList<T> extends AbstractList<T>  {
     @Override
     public void add(int index, T element) {
         size++;
-        ArrayListNode<T> el = new ArrayListNode<>(element);
-        objects[index] = el;
-        T temp;
-        T temp1;
-        temp = objects[index].element;
-        objects[index].element = (T) el;
+        ArrayListNode temp1;
+        ArrayListNode temp2;
+        ArrayListNode<T> newNode = new ArrayListNode<>(element);
 
-        temp1 = objects[index+1].element;
-        objects[index+1].element = temp;
-        temp = objects[index+2].element;
-        objects[index+2].element = temp1;
-        temp1 = objects[index+3].element;
-        objects[index+3].element = temp;
-        temp = objects[index+4].element;
-        objects[index+4].element = temp1;
+        temp1 = (ArrayListNode) objects[index];
+        objects[index] = newNode;
 
-//        for (int i = index; i < objects.length; i++) {
-//            temp1 = objects[i+1].element;
-//            objects[i+1].element = temp;
-//                temp = objects[i+2].element;
-//            objects[i+2].element = temp1;
-//        }
+        for (int i = 1; i < size-1; i++) {
+            temp2 = (ArrayListNode) objects[index+i];
+            objects[index+i] = temp1;
+            temp1 = temp2;
+        }
     }
 
     @Override
