@@ -17,11 +17,19 @@ public class tempMain {
         ArrayList.add(5);
         ArrayList.add(6);
         ArrayList.add(7);
+        List<Integer> ArrayList1 = ListFacttory.createMyArrayList();
+        ArrayList1.add(1);
+        ArrayList1.add(2);
+        ArrayList1.add(3);
+        ArrayList1.add(4);
 
-        ArrayList.add(2,0);
-//        ArrayList.remove(2);
+        ArrayList.removeAll(ArrayList1);
+
+//        ArrayList.add(2,0);
         System.out.println(ArrayList.size());
-        System.out.println(ArrayList.contains(2));
+        ArrayList.remove(new Integer(2));
+        System.out.println(ArrayList.size());
+        System.out.println(ArrayList.contains(44));
         doSomething(ArrayList);
 
         Set set = new HashSet();

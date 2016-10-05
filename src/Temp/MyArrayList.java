@@ -17,12 +17,6 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public boolean isEmpty() {
-//        for (int i = 0; i < objects.length; i++) {
-//            if (objects[i] != null) {
-//                return false;
-//            }
-//        }
-//        return true;
         return size()==0;
     }
 
@@ -59,10 +53,13 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public boolean remove(Object o) {
-        for (int i = (int) o; i < objects.length; i++) {
-            if(objects[i]==null) {
-                objects[i] = objects[i + 1];
-                return false;
+        for (int i = 0; i < objects.length; i++) {
+            if(objects[i]!=null){
+                if(objects[i].element.equals(o)) {
+                    for(int j=i; j<objects.length-1; j++){
+                            objects[j] = objects[j + 1];
+                    }
+                }
             }
         }
         return true;
@@ -82,13 +79,21 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        for (int i = 0; i < objects.length; i++) {
-            c = (Collection<?>) objects[i];
-            if(c!=null) {
-                c = null;
-                return false;
+        if(c instanceof List){
+            for (int i = 0; i < objects.length; i++) {
+                for(int j = 0; j<c.size(); j++){
+                    if(objects[i]!=null){
+                        ArrayListNode a = (ArrayListNode) ((List)c).get(j);
+                        if(objects[i].element.equals(a.getElement())){
+                            remove(a.getElement());
+                        }
+                    }
+                }
             }
+        }else if(c instanceof Map){
+
         }
+
         return true;
     }
 
@@ -114,7 +119,9 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public void clear() {
-
+        for(int i=0; i<objects.length; i++){
+            objects[i]=null;
+        }
     }
 
     @Override
