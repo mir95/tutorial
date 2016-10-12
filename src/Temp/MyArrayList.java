@@ -180,7 +180,7 @@ public class MyArrayList<T> extends AbstractList<T>  {
         return null;
     }
 
-    private class ArrayListNode<T> extends AbstractNode {
+    private class ArrayListNode<T> extends AbstractNode implements Comparable<T> {
 
         ArrayListNode(T el) {
             super(el);
@@ -197,6 +197,11 @@ public class MyArrayList<T> extends AbstractList<T>  {
         @Override
         public String toString() {
             return element + "";
+        }
+
+        @Override
+        public int compareTo(T o) {
+            return 0;
         }
     }
 }
