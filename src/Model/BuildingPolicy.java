@@ -11,6 +11,10 @@ public class BuildingPolicy extends Policy {
     private double risc;
     private double priceRecovery;
 
+    public BuildingPolicy(){
+        super();
+    }
+
     public BuildingPolicy(String PolicyNo, int Year, double Risc, Object PriceRecovery) throws IllegalPolicyException {
         super(PolicyNo, Year);
         if (PriceRecovery instanceof Double) {

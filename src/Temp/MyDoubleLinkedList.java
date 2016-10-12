@@ -68,7 +68,7 @@ public class MyDoubleLinkedList<T> extends AbstractList<T> {
     }
 
     @Override
-    public boolean add(T t) {
+    public void add(T t) {
         //Если аррей пустой
         if (index == -1) {
             index++;
@@ -90,7 +90,6 @@ public class MyDoubleLinkedList<T> extends AbstractList<T> {
         first = (DoubleLinkedListNode)objects[0];
         first.getPrevious((DoubleLinkedListNode)objects[index--]);
         size++;
-        return true;
     }
 
     void addFirst(T o) {
@@ -116,19 +115,19 @@ public class MyDoubleLinkedList<T> extends AbstractList<T> {
     }
 
     @Override
-    public boolean addAll(Collection<? extends T> collection) {
+    public boolean addAll(ListInterface<? extends T> collection) {
         return false;
     }
 
     @Override
-    public boolean addAll(int i, Collection<? extends T> collection) {
+    public boolean addAll(int i, ListInterface<? extends T> collection) {
         return false;
     }
 
     @Override
-    public boolean removeAll(Collection<?> collection) {
+    public boolean removeAll(ListInterface<?> collection) {
         for (int i = 0; i < objects.length; i++) {
-            collection = (Collection<?>) objects[i];
+            collection = (ListInterface<?>) objects[i];
             if(collection!=null) {
                 collection = null;
                 return false;
@@ -153,7 +152,7 @@ public class MyDoubleLinkedList<T> extends AbstractList<T> {
     }
 
     @Override
-    public T remove(int in) {
+    public void remove(int in) {
         T temp = (T)objects[in];
         if(temp==objects[0]){
             for (int i = in; i < index; i++) {
@@ -167,7 +166,6 @@ public class MyDoubleLinkedList<T> extends AbstractList<T> {
         last = (DoubleLinkedListNode) objects[index];
         last.setNext((DoubleLinkedListNode) objects[0]);
         size--;
-        return temp;
     }
 
     void removeFirst() {
@@ -185,12 +183,12 @@ public class MyDoubleLinkedList<T> extends AbstractList<T> {
     }
 
     @Override
-    public boolean containsAll(Collection<?> collection) {
+    public boolean containsAll(ListInterface<?> collection) {
         return false;
     }
 
     @Override
-    public boolean retainAll(Collection<?> collection) {
+    public boolean retainAll(ListInterface<?> collection) {
         return false;
     }
 
@@ -225,7 +223,7 @@ public class MyDoubleLinkedList<T> extends AbstractList<T> {
     }
 
     @Override
-    public List<T> subList(int i, int i1) {
+    public ListInterface<T> subList(int i, int i1) {
         return null;
     }
 

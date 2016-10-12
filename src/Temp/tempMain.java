@@ -9,7 +9,7 @@ public class tempMain {
 
     public static void main(String[] args) {
 
-        List<Integer> ArrayList = ListFacttory.createMyArrayList();
+        ListInterface<Integer> ArrayList = ListFacttory.createMyArrayList();
         ArrayList.add(1);
         ArrayList.add(2);
         ArrayList.add(3);
@@ -17,11 +17,13 @@ public class tempMain {
         ArrayList.add(5);
         ArrayList.add(6);
         ArrayList.add(7);
-        List<Integer> ArrayList1 = ListFacttory.createMyArrayList();
+        ListInterface<Integer> ArrayList1 = ListFacttory.createMyArrayList();
         ArrayList1.add(1);
         ArrayList1.add(2);
         ArrayList1.add(3);
         ArrayList1.add(4);
+
+//        ArrayList.get(0).compareTo(ArrayList.get(1));
 
         ArrayList.removeAll(ArrayList1);
 
@@ -47,7 +49,7 @@ public class tempMain {
 
     }
 
-    private static void doSomething(List<Integer> list) {
+    private static void doSomething(ListInterface<Integer> list) {
         ///
     }
 }

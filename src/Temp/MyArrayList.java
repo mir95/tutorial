@@ -1,5 +1,7 @@
 package Temp;
 
+import javafx.util.Pair;
+
 import java.util.*;
 
 /**
@@ -11,13 +13,13 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
 
     private int size;
 
-    MyArrayList(){
+    MyArrayList() {
         objects = new ArrayListNode[10];
     }
 
     @Override
     public boolean isEmpty() {
-        return size()==0;
+        return size() == 0;
     }
 
     @Override
@@ -32,13 +34,13 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
         }
         index--;
         size--;
-        objects[index+1]=null;
+        objects[index + 1] = null;
     }
 
     @Override
     public boolean contains(Object o) {
         for (int i = 0; i < objects.length; i++) {
-            if(objects[i]!=null) {
+            if (objects[i] != null) {
                 if (objects[i].element == o) {
                     return true;
                 }
@@ -46,7 +48,8 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
         }
         return false;
     }
-//
+
+    //
     @Override
     public Iterator<T> iterator() {
         return null;
@@ -65,10 +68,10 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
     @Override
     public boolean remove(Object o) {
         for (int i = 0; i < objects.length; i++) {
-            if(objects[i]!=null){
-                if(objects[i].element.equals(o)) {
-                    for(int j=i; j<objects.length-1; j++){
-                            objects[j] = objects[j + 1];
+            if (objects[i] != null) {
+                if (objects[i].element.equals(o)) {
+                    for (int j = i; j < objects.length - 1; j++) {
+                        objects[j] = objects[j + 1];
                     }
                 }
             }
@@ -77,21 +80,20 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
     }
 
 
-
     @Override
-    public boolean removeAll(Collection<?> c) {
-        if(c instanceof List){
+    public boolean removeAll(ListInterface<?> c) {
+        if (c instanceof List) {
             for (int i = 0; i < objects.length; i++) {
-                for(int j = 0; j<c.size(); j++){
-                    if(objects[i]!=null){
-                        ArrayListNode a = (ArrayListNode) ((List)c).get(j);
-                        if(objects[i].element.equals(a.getElement())){
+                for (int j = 0; j < c.size(); j++) {
+                    if (objects[i] != null) {
+                        ArrayListNode a = (ArrayListNode) ((List) c).get(j);
+                        if (objects[i].element.equals(a.getElement())) {
                             remove(a.getElement());
                         }
                     }
                 }
             }
-        }else if(c instanceof Map){
+        } else if (c instanceof Map) {
 
         }
 
@@ -99,29 +101,29 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
     }
 
     @Override
-    public boolean containsAll(Collection<?> c) {
+    public boolean containsAll(ListInterface<?> c) {
         return false;
     }
 
     @Override
-    public boolean addAll(Collection<? extends T> c) {
+    public boolean addAll(ListInterface<? extends T> c) {
         return false;
     }
 
     @Override
-    public boolean addAll(int index, Collection<? extends T> c) {
+    public boolean addAll(int index, ListInterface<? extends T> c) {
         return false;
     }
 
     @Override
-    public boolean retainAll(Collection<?> c) {
+    public boolean retainAll(ListInterface<?> c) {
         return false;
     }
 
     @Override
     public void clear() {
-        for(int i=0; i<objects.length; i++){
-            objects[i]=null;
+        for (int i = 0; i < objects.length; i++) {
+            objects[i] = null;
         }
     }
 
@@ -148,17 +150,17 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
         temp1 = (ArrayListNode) objects[index];
         objects[index] = newNode;
 
-        for (int i = 1; i < size-1; i++) {
-            temp2 = (ArrayListNode) objects[index+i];
-            objects[index+i] = temp1;
+        for (int i = 1; i < size - 1; i++) {
+            temp2 = (ArrayListNode) objects[index + i];
+            objects[index + i] = temp1;
             temp1 = temp2;
         }
     }
 
     @Override
     public int indexOf(Object o) {
-        for(int i=0; i<size; i++){
-            if(objects[i].element.equals(o)){
+        for (int i = 0; i < size; i++) {
+            if (objects[i].element.equals(o)) {
                 return i;
             }
         }
@@ -167,9 +169,9 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
 
     @Override
     public int lastIndexOf(Object o) {
-        int  tempIndex = -1;
-        for(int i=0; i<size; i++){
-            if(objects[i].element.equals(o)){
+        int tempIndex = -1;
+        for (int i = 0; i < size; i++) {
+            if (objects[i].element.equals(o)) {
                 tempIndex = i;
             }
         }
@@ -189,15 +191,15 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
     @Override
     public ListInterface<T> subList(int fromIndex, int toIndex) {
         MyArrayList<T> temp = new MyArrayList<>();
-        for(int i=fromIndex; i<toIndex; i++){
-            if(objects[i]!=null){
+        for (int i = fromIndex; i < toIndex; i++) {
+            if (objects[i] != null) {
                 temp.add(objects[i].element);
             }
         }
         return temp;
     }
 
-    private class ArrayListNode<T> extends AbstractNode implements Comparable<ArrayListNode> {
+    private class ArrayListNode<T> extends AbstractNode implements Comparable<Comparable<ArrayListNode>> {
 
         ArrayListNode(T el) {
             super(el);
@@ -217,19 +219,8 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
         }
 
         @Override
-        public int compareTo(ArrayListNode o) {
-            if(o.getElement() instanceof Integer || o.getElement() instanceof String){
-                if(){
-
-                }
-                if(this.element.equals(o.getElement())){
-                    return 0;
-                }else if(this.element.equals(o.getElement())){
-
-                }
-            }
-
-            return 0;
+        public int compareTo(Comparable<ArrayListNode> o) {
+            return this.compareTo(o);
         }
     }
 }

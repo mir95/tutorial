@@ -5,13 +5,19 @@ package Model;
  */
 
 import Utility.IllegalPolicyException;
+import javafx.util.Pair;
+
 import java.util.Calendar;
 import static Utility.Common.cal;
 
-public abstract class Policy {
+public abstract class Policy  implements Comparable {
 
     private String policyNo;
     private int year;
+
+    public Policy(){
+
+    }
 
     public Policy(String PolicyNo, int Year) throws IllegalPolicyException {
         policyNo = PolicyNo;
@@ -70,5 +76,16 @@ public abstract class Policy {
     public String toString() {
         //StringBuilder
         return year + ", " + policyNo;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        if(this.year == ((Policy)o).year){
+            return 0;
+        }else if(this.year > ((Policy)o).year){
+            return 1;
+        }else {
+            return -1;
+        }
     }
 }

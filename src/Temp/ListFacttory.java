@@ -9,7 +9,7 @@ import java.util.List;
 class ListFacttory {
 
     public static MyArrayList createMyArrayList(){
-        return new MyArrayList();
+        return new MyArrayList<>();
 }
 
     public static MyLinkedList createMyLinkedList(){

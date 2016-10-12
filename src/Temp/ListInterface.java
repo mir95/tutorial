@@ -29,15 +29,15 @@ public interface ListInterface<T> {
 
     boolean remove(Object o);
 
-    boolean removeAll(Collection<?> c);
+    boolean removeAll(ListInterface<?> c);
 
-    boolean containsAll(Collection<?> c);
+    boolean containsAll(ListInterface<?> c);
 
-    boolean addAll(Collection<? extends T> c);
+    boolean addAll(ListInterface<? extends T> c);
 
-    boolean addAll(int index, Collection<? extends T> c);
+    boolean addAll(int index, ListInterface<? extends T> c);
 
-    boolean retainAll(Collection<?> c);
+    boolean retainAll(ListInterface<?> c);
 
     void clear();
 

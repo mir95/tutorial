@@ -1,8 +1,6 @@
 package Temp;
 
-import java.util.Collection;
 import java.util.Iterator;
-import java.util.List;
 import java.util.ListIterator;
 
 /**
@@ -52,7 +50,7 @@ public class MyLinkedList<T> extends AbstractList<T> {
     }
 
     @Override
-    public boolean add(T o) {
+    public void add(T o) {
         //Если аррей пустой
         if (index == -1) {
             index++;
@@ -71,7 +69,6 @@ public class MyLinkedList<T> extends AbstractList<T> {
         last = (LinkedListNode)objects[index];
         last.setNext((LinkedListNode)objects[0]);
         size++;
-        return true;
     }
 
     void addFirst(T o) {
@@ -92,12 +89,12 @@ public class MyLinkedList<T> extends AbstractList<T> {
     }
 
     @Override
-    public boolean addAll(Collection<? extends T> c) {
+    public boolean addAll(ListInterface<? extends T> c) {
         return false;
     }
 
     @Override
-    public boolean addAll(int index, Collection<? extends T> c) {
+    public boolean addAll(int index, ListInterface<? extends T> c) {
         return false;
     }
 
@@ -107,12 +104,12 @@ public class MyLinkedList<T> extends AbstractList<T> {
     }
 
     @Override
-    public boolean containsAll(Collection<?> c) {
+    public boolean containsAll(ListInterface<?> c) {
         return false;
     }
 
     @Override
-    public boolean retainAll(Collection<?> c) {
+    public boolean retainAll(ListInterface<?> c) {
         return false;
     }
 
@@ -131,16 +128,15 @@ public class MyLinkedList<T> extends AbstractList<T> {
     }
 
     @Override
-    public boolean removeAll(Collection<?> c) {
+    public boolean removeAll(ListInterface<?> c) {
         return false;
     }
 
     @Override
-    public T remove(int index1) {
+    public void remove(int index1) {
         for (int i = index1; i < index; i++) {
             objects[i] = objects[i + 1];
         }
-        return removeLast();
     }
 
     void removeFirst() {
@@ -176,7 +172,7 @@ public class MyLinkedList<T> extends AbstractList<T> {
     }
 
     @Override
-    public List<T> subList(int fromIndex, int toIndex) {
+    public ListInterface<T> subList(int fromIndex, int toIndex) {
         return null;
     }
 
