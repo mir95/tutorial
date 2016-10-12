@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0d937299-8ed3-4932-9926-b0c830349b10" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/AbstractList.java" afterPath="$PROJECT_DIR$/src/Temp/AbstractList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/ListInterface.java" afterPath="$PROJECT_DIR$/src/Temp/ListInterface.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/MyArrayList.java" afterPath="$PROJECT_DIR$/src/Temp/MyArrayList.java" />
     </list>
     <ignored path="InsuranceCompany.iws" />
@@ -43,8 +45,8 @@
       <file leaf-file-name="AbstractList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Temp/AbstractList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="182">
+              <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
               <folding>
                 <element signature="method#AbstractList#0;class#AbstractList#0" expanded="false" />
               </folding>
@@ -68,9 +70,11 @@
       <file leaf-file-name="ListInterface.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Temp/ListInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="754">
+              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,13 +82,15 @@
       <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Temp/MyArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+            <state relative-caret-position="244">
+              <caret line="222" column="20" selection-start-line="222" selection-start-column="20" selection-end-line="222" selection-end-column="20" />
               <folding>
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#4320#4321#0" expanded="true" />
-                <element signature="e#4352#4353#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#3916#3917#0" expanded="true" />
+                <element signature="e#3943#3944#0" expanded="true" />
+                <element signature="e#4011#4012#0" expanded="true" />
+                <element signature="e#4038#4039#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,8 +147,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -188,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/Temp/Classes.java" />
         <option value="$PROJECT_DIR$/src/Temp/List.java" />
         <option value="$PROJECT_DIR$/src/Temp/Node.java" />
-        <option value="$PROJECT_DIR$/src/Temp/ListInterface.java" />
         <option value="$PROJECT_DIR$/src/Model/Classes.java" />
         <option value="$PROJECT_DIR$/src/Temp/Collection.java" />
         <option value="$PROJECT_DIR$/src/Temp/Map.java" />
@@ -201,11 +206,13 @@
         <option value="$PROJECT_DIR$/src/Temp/Map/MyAbstractMap.java" />
         <option value="$PROJECT_DIR$/src/Temp/Map/AbstractMap.java" />
         <option value="$PROJECT_DIR$/src/Temp/Map/MapInterface.java" />
-        <option value="$PROJECT_DIR$/src/Temp/AbstractList.java" />
         <option value="$PROJECT_DIR$/src/Temp/ListFacttory.java" />
         <option value="$PROJECT_DIR$/src/Temp/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/Temp/MyDoubleLinkedList.java" />
         <option value="$PROJECT_DIR$/src/Temp/tempMain.java" />
+        <option value="$PROJECT_DIR$/src/Temp/AbstractList.java" />
+        <option value="$PROJECT_DIR$/src/Temp/ListInterface1.java" />
+        <option value="$PROJECT_DIR$/src/Temp/ListInterface.java" />
         <option value="$PROJECT_DIR$/src/Temp/MyArrayList.java" />
       </list>
     </option>
@@ -357,6 +364,9 @@
     <property name="Repository.Attach.Sources" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Temp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\777\IdeaProjects\InsuranceCompany\src\Model" />
     </key>
@@ -752,7 +762,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475774289167</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="+ Added: add(index i, T element) to MyArrayList&#10;">
+      <created>1476273962904</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1476273962904</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -779,6 +796,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15665236" sideWeight="0.4840871" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -792,7 +810,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23614457" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855093" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -842,25 +859,17 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Temp/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="method#AbstractList#0;class#AbstractList#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Temp/MyArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding>
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#4320#4321#0" expanded="true" />
-            <element signature="e#4352#4353#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#3916#3917#0" expanded="true" />
+            <element signature="e#3943#3944#0" expanded="true" />
+            <element signature="e#4011#4012#0" expanded="true" />
+            <element signature="e#4038#4039#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -918,10 +927,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#4320#4321#0" expanded="true" />
-            <element signature="e#4352#4353#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#3916#3917#0" expanded="true" />
+            <element signature="e#3943#3944#0" expanded="true" />
+            <element signature="e#4011#4012#0" expanded="true" />
+            <element signature="e#4038#4039#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -979,10 +990,12 @@
         <state relative-caret-position="119">
           <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
           <folding>
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#4320#4321#0" expanded="true" />
-            <element signature="e#4352#4353#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#3916#3917#0" expanded="true" />
+            <element signature="e#3943#3944#0" expanded="true" />
+            <element signature="e#4011#4012#0" expanded="true" />
+            <element signature="e#4038#4039#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1028,7 +1041,6 @@
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/AbstractMap.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/Map.java" />
     <entry file="file://$PROJECT_DIR$/src/Temp/Map/Entry.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/List.java" />
     <entry file="file://$PROJECT_DIR$/src/Temp/Map/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
@@ -1092,14 +1104,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Temp/MyDoubleLinkedListe.java" />
-    <entry file="file://$PROJECT_DIR$/src/Temp/ListInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Utility/Common.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1123,24 +1127,6 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/javafx-src.zip!/com/sun/glass/ui/Size.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/jre/lib/rt.jar!/java/util/List.class" />
-    <entry file="file://$PROJECT_DIR$/src/Temp/AbstractNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Temp/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="method#AbstractList#0;class#AbstractList#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Temp/ListFacttory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -1148,19 +1134,6 @@
           <folding>
             <element signature="e#371#372#0" expanded="true" />
             <element signature="e#418#419#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Temp/MyArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-          <folding>
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#4320#4321#0" expanded="true" />
-            <element signature="e#4352#4353#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1202,6 +1175,65 @@
         <state relative-caret-position="728">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Temp/AbstractNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Temp/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding>
+            <element signature="method#AbstractList#0;class#AbstractList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15474">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Temp/ListInterface1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="38" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Temp/ListInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Temp/MyArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="222" column="20" selection-start-line="222" selection-start-column="20" selection-end-line="222" selection-end-column="20" />
+          <folding>
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#3916#3917#0" expanded="true" />
+            <element signature="e#3943#3944#0" expanded="true" />
+            <element signature="e#4011#4012#0" expanded="true" />
+            <element signature="e#4038#4039#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

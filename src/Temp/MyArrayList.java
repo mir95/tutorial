@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Created by Sermilion on 23/09/2016.
  */
-public class MyArrayList<T> extends AbstractList<T>  {
+public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> {
 
     private int index = -1;
 
@@ -20,8 +20,19 @@ public class MyArrayList<T> extends AbstractList<T>  {
         return size()==0;
     }
 
+    @Override
     public int size() {
         return size;
+    }
+
+    @Override
+    public void remove(int index1) {
+        for (int i = index1; i < index; i++) {
+            objects[i] = objects[i + 1];
+        }
+        index--;
+        size--;
+        objects[index+1]=null;
     }
 
     @Override
@@ -65,17 +76,7 @@ public class MyArrayList<T> extends AbstractList<T>  {
         return true;
     }
 
-    @Override
-    public T remove(int index1) {
-        T temp = (T)objects[index1];
-        for (int i = index1; i < index; i++) {
-            objects[i] = objects[i + 1];
-        }
-        index--;
-        size--;
-        objects[index+1]=null;
-        return temp;
-    }
+
 
     @Override
     public boolean removeAll(Collection<?> c) {
@@ -130,12 +131,11 @@ public class MyArrayList<T> extends AbstractList<T>  {
     }
 
     @Override
-    public boolean add(T t) {
+    public void add(T t) {
         size++;
         index++;
         ArrayListNode<T> node = new ArrayListNode<>(t);
         objects[index] = node;
-        return true;
     }
 
     @Override
@@ -157,12 +157,23 @@ public class MyArrayList<T> extends AbstractList<T>  {
 
     @Override
     public int indexOf(Object o) {
-        return 0;
+        for(int i=0; i<size; i++){
+            if(objects[i].element.equals(o)){
+                return i;
+            }
+        }
+        return -1;
     }
 
     @Override
     public int lastIndexOf(Object o) {
-        return 0;
+        int  tempIndex = -1;
+        for(int i=0; i<size; i++){
+            if(objects[i].element.equals(o)){
+                tempIndex = i;
+            }
+        }
+        return tempIndex;
     }
 
     @Override
@@ -176,11 +187,17 @@ public class MyArrayList<T> extends AbstractList<T>  {
     }
 
     @Override
-    public List<T> subList(int fromIndex, int toIndex) {
-        return null;
+    public ListInterface<T> subList(int fromIndex, int toIndex) {
+        MyArrayList<T> temp = new MyArrayList<>();
+        for(int i=fromIndex; i<toIndex; i++){
+            if(objects[i]!=null){
+                temp.add(objects[i].element);
+            }
+        }
+        return temp;
     }
 
-    private class ArrayListNode<T> extends AbstractNode implements Comparable<T> {
+    private class ArrayListNode<T> extends AbstractNode implements Comparable<ArrayListNode> {
 
         ArrayListNode(T el) {
             super(el);
@@ -200,7 +217,18 @@ public class MyArrayList<T> extends AbstractList<T>  {
         }
 
         @Override
-        public int compareTo(T o) {
+        public int compareTo(ArrayListNode o) {
+            if(o.getElement() instanceof Integer || o.getElement() instanceof String){
+                if(){
+
+                }
+                if(this.element.equals(o.getElement())){
+                    return 0;
+                }else if(this.element.equals(o.getElement())){
+
+                }
+            }
+
             return 0;
         }
     }

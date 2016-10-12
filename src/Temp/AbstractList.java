@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by 777 on 12.07.2016.
  */
-abstract class AbstractList<T> implements List<T> {
+abstract class AbstractList<T> implements ListInterface<T> {
 
     AbstractNode<T>[] objects;
 
