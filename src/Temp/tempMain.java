@@ -23,6 +23,11 @@ public class tempMain {
         ArrayList1.add(3);
         ArrayList1.add(4);
 
+
+//        for(Integer i: ArrayList){
+//            System.out.println(i);
+//        }
+
 //        ArrayList.get(0).compareTo(ArrayList.get(1));
 
         ArrayList.removeAll(ArrayList1);

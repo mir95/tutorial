@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d937299-8ed3-4932-9926-b0c830349b10" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InsuranceCompany/Model/BuildingPolicy.class" afterPath="$PROJECT_DIR$/out/production/InsuranceCompany/Model/BuildingPolicy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InsuranceCompany/Model/Policy.class" afterPath="$PROJECT_DIR$/out/production/InsuranceCompany/Model/Policy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/AbstractList.class" afterPath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/AbstractList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/ListInterface.class" afterPath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/ListInterface.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/MyArrayList.class" afterPath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/MyArrayList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/MyLinkedList$LinkedListNode.class" afterPath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/MyLinkedList$LinkedListNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/MyLinkedList.class" afterPath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/MyLinkedList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/tempMain.class" afterPath="$PROJECT_DIR$/out/production/InsuranceCompany/Temp/tempMain.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/BuildingPolicy.java" afterPath="$PROJECT_DIR$/src/Model/BuildingPolicy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Policy.java" afterPath="$PROJECT_DIR$/src/Model/Policy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/ListFacttory.java" afterPath="$PROJECT_DIR$/src/Temp/ListFacttory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/ListInterface.java" afterPath="$PROJECT_DIR$/src/Temp/ListInterface.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/MyArrayList.java" afterPath="$PROJECT_DIR$/src/Temp/MyArrayList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/MyDoubleLinkedList.java" afterPath="$PROJECT_DIR$/src/Temp/MyDoubleLinkedList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/MyLinkedList.java" afterPath="$PROJECT_DIR$/src/Temp/MyLinkedList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Temp/tempMain.java" afterPath="$PROJECT_DIR$/src/Temp/tempMain.java" />
     </list>
     <ignored path="InsuranceCompany.iws" />
@@ -40,19 +43,25 @@
       <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Temp/MyArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            <state relative-caret-position="34">
+              <caret line="198" column="9" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#4025#4026#0" expanded="true" />
-                <element signature="e#4052#4053#0" expanded="true" />
-                <element signature="e#4120#4121#0" expanded="true" />
-                <element signature="e#4147#4148#0" expanded="true" />
-                <element signature="e#4966#4967#0" expanded="true" />
-                <element signature="e#5014#5015#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
+                <element signature="e#504#505#0" expanded="true" />
+                <element signature="e#3964#3965#0" expanded="true" />
+                <element signature="e#4012#4013#0" expanded="true" />
+                <element signature="e#4081#4082#0" expanded="true" />
+                <element signature="e#4108#4109#0" expanded="true" />
+                <element signature="e#4186#4187#0" expanded="true" />
+                <element signature="e#4213#4214#0" expanded="true" />
+                <element signature="e#5032#5033#0" expanded="true" />
+                <element signature="e#5080#5081#0" expanded="true" />
+                <element signature="e#5232#5233#0" expanded="true" />
+                <element signature="e#5275#5276#0" expanded="true" />
+                <element signature="e#5320#5321#0" expanded="true" />
+                <element signature="e#5361#5362#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyLinkedList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyLinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Temp/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
@@ -76,6 +85,18 @@
               <folding>
                 <element signature="method#add#1;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListInterface.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Temp/ListInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,6 +111,16 @@
                 <element signature="e#271#272#0" expanded="true" />
                 <element signature="e#294#295#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tempMain.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Temp/tempMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="28" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,10 +192,10 @@
         <option value="$PROJECT_DIR$/src/Temp/ListFacttory.java" />
         <option value="$PROJECT_DIR$/src/Model/BuildingPolicy.java" />
         <option value="$PROJECT_DIR$/src/Model/Policy.java" />
-        <option value="$PROJECT_DIR$/src/Temp/ListInterface.java" />
-        <option value="$PROJECT_DIR$/src/Temp/MyArrayList.java" />
         <option value="$PROJECT_DIR$/src/Temp/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/Temp/MyDoubleLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/Temp/ListInterface.java" />
+        <option value="$PROJECT_DIR$/src/Temp/MyArrayList.java" />
         <option value="$PROJECT_DIR$/src/Temp/tempMain.java" />
       </list>
     </option>
@@ -728,7 +759,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476275530004</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="12.10.2016">
+      <created>1476277799418</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1476277799418</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -752,7 +790,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711622" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23614457" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23614457" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -762,7 +800,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19908117" sideWeight="0.5159129" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31445783" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31445783" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -815,14 +853,15 @@
     <MESSAGE value="добавил add&#10;" />
     <MESSAGE value="добавил MyDoubleLinkedListNode&#10;" />
     <MESSAGE value="+ Added: add(index i, T element) to MyArrayList&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ Added: add(index i, T element) to MyArrayList&#10;" />
+    <MESSAGE value="12.10.2016" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.10.2016" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Temp/tempMain.java</url>
-          <line>25</line>
+          <line>30</line>
           <properties />
           <option name="timeStamp" value="333" />
         </line-breakpoint>
@@ -882,15 +921,21 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#4025#4026#0" expanded="true" />
-            <element signature="e#4052#4053#0" expanded="true" />
-            <element signature="e#4120#4121#0" expanded="true" />
-            <element signature="e#4147#4148#0" expanded="true" />
-            <element signature="e#4966#4967#0" expanded="true" />
-            <element signature="e#5014#5015#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#3964#3965#0" expanded="true" />
+            <element signature="e#4012#4013#0" expanded="true" />
+            <element signature="e#4081#4082#0" expanded="true" />
+            <element signature="e#4108#4109#0" expanded="true" />
+            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#4213#4214#0" expanded="true" />
+            <element signature="e#5032#5033#0" expanded="true" />
+            <element signature="e#5080#5081#0" expanded="true" />
+            <element signature="e#5232#5233#0" expanded="true" />
+            <element signature="e#5275#5276#0" expanded="true" />
+            <element signature="e#5320#5321#0" expanded="true" />
+            <element signature="e#5361#5362#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -949,15 +994,21 @@
           <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#4025#4026#0" expanded="true" />
-            <element signature="e#4052#4053#0" expanded="true" />
-            <element signature="e#4120#4121#0" expanded="true" />
-            <element signature="e#4147#4148#0" expanded="true" />
-            <element signature="e#4966#4967#0" expanded="true" />
-            <element signature="e#5014#5015#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#3964#3965#0" expanded="true" />
+            <element signature="e#4012#4013#0" expanded="true" />
+            <element signature="e#4081#4082#0" expanded="true" />
+            <element signature="e#4108#4109#0" expanded="true" />
+            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#4213#4214#0" expanded="true" />
+            <element signature="e#5032#5033#0" expanded="true" />
+            <element signature="e#5080#5081#0" expanded="true" />
+            <element signature="e#5232#5233#0" expanded="true" />
+            <element signature="e#5275#5276#0" expanded="true" />
+            <element signature="e#5320#5321#0" expanded="true" />
+            <element signature="e#5361#5362#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1153,21 +1204,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Temp/MyArrayList.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="254">
+          <caret line="1216" column="5" selection-start-line="1216" selection-start-column="5" selection-end-line="1216" selection-end-column="5" />
+          <folding>
+            <element signature="e#46394#46395#0" expanded="true" />
+            <element signature="e#46458#46459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Temp/MyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="124" column="13" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+          <folding>
+            <element signature="method#add#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Temp/ListInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#4025#4026#0" expanded="true" />
-            <element signature="e#4052#4053#0" expanded="true" />
-            <element signature="e#4120#4121#0" expanded="true" />
-            <element signature="e#4147#4148#0" expanded="true" />
-            <element signature="e#4966#4967#0" expanded="true" />
-            <element signature="e#5014#5015#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1180,23 +1244,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Temp/ListInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/Temp/MyArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="34">
+          <caret line="198" column="9" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="1216" column="5" selection-start-line="1216" selection-start-column="5" selection-end-line="1216" selection-end-column="5" />
-          <folding>
-            <element signature="e#46394#46395#0" expanded="true" />
-            <element signature="e#46458#46459#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#3964#3965#0" expanded="true" />
+            <element signature="e#4012#4013#0" expanded="true" />
+            <element signature="e#4081#4082#0" expanded="true" />
+            <element signature="e#4108#4109#0" expanded="true" />
+            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#4213#4214#0" expanded="true" />
+            <element signature="e#5032#5033#0" expanded="true" />
+            <element signature="e#5080#5081#0" expanded="true" />
+            <element signature="e#5232#5233#0" expanded="true" />
+            <element signature="e#5275#5276#0" expanded="true" />
+            <element signature="e#5320#5321#0" expanded="true" />
+            <element signature="e#5361#5362#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1204,19 +1272,8 @@
     <entry file="file://$PROJECT_DIR$/src/Temp/tempMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="28" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Temp/MyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="124" column="13" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
-          <folding>
-            <element signature="method#add#1;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

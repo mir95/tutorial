@@ -7,7 +7,7 @@ import java.util.ListIterator;
 /**
  * Created by 777 on 12.07.2016.
  */
-public interface ListInterface<T> {
+public interface ListInterface<T> extends Iterable<T>{
 
     void add(T o);
 

@@ -3,11 +3,12 @@ package Temp;
 import javafx.util.Pair;
 
 import java.util.*;
+import java.util.function.Consumer;
 
 /**
  * Created by Sermilion on 23/09/2016.
  */
-public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> {
+public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T>, Iterable<T> {
 
     private int index = -1;
 
@@ -49,11 +50,6 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
         return false;
     }
 
-    //
-    @Override
-    public Iterator<T> iterator() {
-        return null;
-    }
 
     @Override
     public Object[] toArray() {
@@ -178,15 +174,20 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
         return tempIndex;
     }
 
+    public Iterator iterator(){
+        return new MyArrayListIterator();
+    }
+
     @Override
-    public ListIterator<T> listIterator() {
+    public java.util.ListIterator<T> listIterator() {
         return null;
     }
 
     @Override
-    public ListIterator<T> listIterator(int index) {
+    public java.util.ListIterator<T> listIterator(int index) {
         return null;
     }
+
 
     @Override
     public ListInterface<T> subList(int fromIndex, int toIndex) {
@@ -199,7 +200,7 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
         return temp;
     }
 
-    private class ArrayListNode<T> extends AbstractNode implements Comparable<Comparable<ArrayListNode>> {
+    public class ArrayListNode<T> extends AbstractNode implements Comparable<Comparable<ArrayListNode>> {
 
         ArrayListNode(T el) {
             super(el);
@@ -221,6 +222,19 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T> 
         @Override
         public int compareTo(Comparable<ArrayListNode> o) {
             return this.compareTo(o);
+        }
+    }
+
+    public class MyArrayListIterator implements Iterator<T>{
+        private int index = 0;
+        @Override
+        public boolean hasNext() {
+            return index < size;
+        }
+
+        @Override
+        public T next() {
+            return get(index);
         }
     }
 }
