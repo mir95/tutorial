@@ -1,9 +1,8 @@
 package Temp;
 
-import javafx.util.Pair;
-
-import java.util.*;
-import java.util.function.Consumer;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Sermilion on 23/09/2016.
@@ -174,7 +173,7 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T>,
         return tempIndex;
     }
 
-    public Iterator iterator(){
+    public Iterator iterator() {
         return new MyArrayListIterator();
     }
 
@@ -225,8 +224,9 @@ public class MyArrayList<T> extends AbstractList<T> implements ListInterface<T>,
         }
     }
 
-    public class MyArrayListIterator implements Iterator<T>{
+    public class MyArrayListIterator implements Iterator<T> {
         private int index = 0;
+
         @Override
         public boolean hasNext() {
             return index < size;
